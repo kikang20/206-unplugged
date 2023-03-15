@@ -87,6 +87,96 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+  
+header .content-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header,
+nav {
+  display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+header nav ul {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .social p{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-area {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature,
+.features-item-description {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.faq{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.faq,
+.content-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
