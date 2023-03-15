@@ -100,20 +100,33 @@ header .content-wrapper{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 55%;
+  margin: 50px 0;
 }
 
-header,
-nav {
+header nav {
   display: flex;
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
+    width: 60%;
 }
 
 header nav ul {
   display: flex;
     justify-content: center;
     align-items: center;
+    width:60%; 
+    margin: 0;
+    padding: 20px 0;
+}
+
+.header-divider{
+  width: ;
+}
+
+header {
+  padding: 15px 0;
 }
 
 footer .social p{
@@ -126,12 +139,22 @@ footer .social p{
   display: flex;
     justify-content: center;
     align-items: center;
+    padding: 50px 0;
+}
+
+.form {
+  padding: 20px 0;
+}
+
+.form-description {
+  padding: 20px 0;
 }
 
 .feature {
   display: flex;
     justify-content: center;
     align-items: center;
+    padding:  55px 0;
 }
 
 .feature,
@@ -140,6 +163,8 @@ footer .social p{
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    margin: 0;
+    padding: 30px 0;
 }
 
 .reviews {
