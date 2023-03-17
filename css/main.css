@@ -114,11 +114,16 @@ a {
   text-decoration: none;
 	
 }
+
+h1 {
+  font-size: 2.5em;
+}
  
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.9em;
   font-weight: 500;
+  color:#e2e3ed;
  
 }
  
@@ -127,13 +132,14 @@ h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.1em;
   font-weight: 500;
+  color:#e2e3ed;
  
 }
  
 p {
   font-size: .9em;
   line-height: 18px;
-	
+	color:#e2e3ed;
 }
  
 img {
@@ -150,7 +156,35 @@ address {
 }
  
 .content-wrapper {
+  width: 90%;
+  margin: 50px 0;
  
+}
+
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
    
 
@@ -166,6 +200,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #202322;
 }
   
 header .content-wrapper{
@@ -182,18 +217,26 @@ header nav {
   align-items: center;
   flex-flow: row wrap;
   width: 60%;
+  text-decoration: none;
+  text-transform: capitalize;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
   width:100%; 
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+
 }
 
 .header-divider{
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
+  color: #3a3a3a;
+
 }
 
 
@@ -203,16 +246,19 @@ header {
 
 footer{
   flex-direction: column;
+  color: white;
 }
 
 footer .social p{
   display: flex;
     justify-content: center;
     align-items: center;
+    color: #527158;
 }
 
 footer p {
   margin: 0;
+  line-height: 18px;
 }
 
 footer .content-wrapper {
@@ -236,11 +282,19 @@ footer .social-icons p {
   align-items: center;
 }
 
+.copyright{
+  margin-bottom: 20px;
+  }
+}
+
 .form-description {
   padding: 20px 0;
+  
+  
 }
 
 aside {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -259,17 +313,19 @@ aside {
   flex-flow: row wrap;
 }
 
-
+.features h2 {
+  margin-bottom: 60px;
+}
 
 .features article {
   width: 60%;
-  margin: 50px 0;
+  margin: 30px 0;
 }
 
 .features .features-items {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content:center;
+  align-items:center;
   flex-flow: row wrap;
 }
 
@@ -283,6 +339,7 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
 .mission {
@@ -290,6 +347,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .contact-section {
