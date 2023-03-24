@@ -105,8 +105,6 @@ ul,
 ol {
   list-style-type: none;
   padding-right: 47px;
-  
-  
  
 }
  
@@ -229,27 +227,28 @@ input[type=button] {
   
   header .content-wrapper {
     margin: 0;
-    display:flex; 
-    align-items: center
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
   }
   
   header figure {
     width: 50%;
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-flow: row wrap;
   }
   
   .header-divider {
     background: #3a3a3a; 
     width: 100%;
-    margin: 5px 0 20px 0;
+    margin: 10px 0 20px 0;
   }
   
   header nav {
-    width: 50%;
+    width: 70%;
     font-size: 1.1em;
     font-weight: 700;
     text-transform: uppercase;
@@ -260,15 +259,14 @@ input[type=button] {
   }
   
   header nav ul {
-    width: 100%;
+    width: 70%;
     display: flex;
     justify-content: space-around;
-    
-    
   }
   
   header nav ul li {
-    font-size: 1.125em;
+    font-size: 1.1em;
+    
    
   }
 
@@ -290,13 +288,35 @@ footer p {
 }
 
 footer .content-wrapper {
-  width: 55%;
-  margin: 50px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  
+}
+
+.footer-content .contact h4 {
+  display: flex;
+  justify-content: center;
+}
+
+footer address {
+  display: flex;
+  justify-content: center;
 }
 
 footer .contact {
   margin-bottom: 50px;
+  
 }
+
+footer .social {
+  display: flex;
+  justify-content: center;
+}
+
+
 
 footer .social-icons {
   display: flex;
@@ -313,7 +333,7 @@ footer .social-icons p {
 .copyright{
   margin-bottom: 20px;
   }
-}
+
 
 .form-description {
   padding: 20px 0;
@@ -363,9 +383,6 @@ aside {
   flex-flow: row wrap;
 }
 
-.features-items{
-  
-}
 
 
 
@@ -400,15 +417,17 @@ aside {
 }
 
 
-.map figure {
-  width: 100%;
-  height: 0; 
-  padding-bottom: 125%; 
-  overflow: hidden;
+.map-container {
   position: relative;
+  padding-bottom: 55%;
+  overflow: hidden;
+  width: 100%;
+  
 }
+
+
  
-.map iframe {
+.map-container iframe {
   width: 100%;
   height: 100%;
   position: absolute; 
@@ -538,7 +557,7 @@ h4 {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
    /*Tablet styles here*/
 
    .content-wrapper {
@@ -548,13 +567,11 @@ h4 {
 
 /* Header */
 
-
-
-
-
-
-  
+.header-divider {
+  display: none;
 }
+
+
 
 /* Hero Area */
 
@@ -598,23 +615,12 @@ aside .content-wrapper .form {
 
 /* Footer */
 footer .content-wrapper {
-    width: 65%;
-    margin: 100px 0;
+  width: 65%;
+  margin: 100px 0;
+  
 }
 
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-footer .contact {
-    margin-bottom: 0;
-}
-
-footer .copyright {
-    width: 100%;
-}
  
 
 /* ==========================================================================
@@ -633,14 +639,29 @@ footer .copyright {
 
 
 
-.contact-section .content-wrapper h2 {
-    width: 100%;
+.contact-section .content-wrapper h2 {  
+    font-size: 40px;
+
 }
 
-.contact-content {
-    display:flex;
-    justify-content: space-between
-    align-items: center;
+
+.contact-section .content-wrapper h2 {
+  font-size: 55px;
+}
+
+.contact-content{
+  display: flex;
+  justify-content: space-between;
+  
+
+}
+
+
+.contact-content h4 {
+  font-size: 26px;
+}
+
+
 }
 
 /* ==========================================================================
@@ -693,11 +714,34 @@ footer .copyright {
       font-size: 1.125em;
       line-height: 1.333;
   }
+
+  .header-divider {
+    display: none;
+  }
+
+
+  header figure {
+    width: 370px;
+  }
+
+  header nav{ 
+    width: 50%;
+  }
+
+  header nav ul li {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+
+
+
   /* Hero */
   .hero-area h1 {
     font-size: 3.75em;
     width: 80%;
-}
+  }
 
   /* Aside */
   aside .content-wrapper {
@@ -740,19 +784,32 @@ footer .copyright {
     /* ==========================================================================
        About Page
        ========================================================================== */
-        .mission h2,
+       
+       .mission h2,
         .contact-section .content-wrapper h2 {
-            width: 70%;
-          
-            
+            width: 100%;
+  
         }
 
         .mission h2 {
           font-size: 45px;
           margin-top: 90px;
+          width: 50%;
+        }
+
+        .contact-section .content-wrapper h2 {
+          font-size: 55px;
+        }
+
+        .contact-content{
+          display: flex;
+          justify-content: space-between;
+          align-items: baseline;
+      
         }
         
-        
+
+    
        
      
     /* ==========================================================================
@@ -761,8 +818,10 @@ footer .copyright {
         .faq h2 {
             width: 100%;
         }
+
+       
      
-    }
+    
 }
 
 /* ==========================================================================
