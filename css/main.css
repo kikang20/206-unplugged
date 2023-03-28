@@ -385,6 +385,12 @@ aside {
 
 
 
+.features i {
+	font-size: 3em;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
 
 
 
@@ -603,6 +609,13 @@ aside .content-wrapper .form {
     width: 50%;
 }
 
+
+
+.features i {
+	font-size: 3em;
+    
+}
+
 /* Reviews */
 .reviews article {
   display: flex;
@@ -662,7 +675,7 @@ footer .content-wrapper {
 }
 
 
-}
+
 
 /* ==========================================================================
    FAQ Page
@@ -684,11 +697,9 @@ footer .content-wrapper {
   justify-content: center;
 }
 
+
+
 }
-
-
-
-
 
   @media only screen and (min-width: 1200px) {  
     /*Desktop styles here */  
@@ -766,6 +777,12 @@ footer .content-wrapper {
   .features article {
     flex-basis: 33%;
   }
+
+  
+.features i {
+	font-size: 3.75em;
+    margin-bottom: 40px;
+}
   
   /* Reviews */
 
